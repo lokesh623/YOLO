@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOLOv8 Object Tracker</title>
+</head>
+<body>
+    <h1>Upload a Video for Object Tracking</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="video" accept="video/mp4" required>
+        <input type="submit" value="Upload and Process">
+    </form>
+
+    {% if output_video %}
+        <h2>Processed Video:</h2>
+        <video width="640" height="480" controls>
+            <source src="{{ url_for('output_video', filename=output_video) }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    {% endif %}
+</body>
+</html>
