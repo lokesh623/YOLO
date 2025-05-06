@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+.yolo/
+
+# Dataset folders and files
+Classroom/
+*.csv
+*.xlsx
+*.json
+*.xml
+*.parquet
+
+# Media files (images/videos/audio)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.gif
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mp3
+*.wav
+
+# Flask cache and instance
+instance/
+*.pyc
+*.log
+
+# Docker artifacts
+*.tar
+*.img
+*.bak
+*.zip
+
+# VSCode settings (if you use VSCode)
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
